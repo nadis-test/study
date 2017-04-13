@@ -27,12 +27,14 @@
 public class PointsDistance {
 public static void main(String[] args) {
         double testdistance;
-        double x1=1;
-        double y1=2;
-        double x2=5;
-        double y2=7;
 
-        testdistance = Math.sqrt(Math.pow((x1-x2),2)+Math.pow((y1-y2),2));
+        PointXY pointA = new PointXY();
+        PointXY pointB = new PointXY();
+
+        pointA.setPoint(1,2);
+        pointB.setPoint(5,7);
+
+        testdistance = Math.sqrt(Math.pow((pointA.coordX-pointB.coordX),2)+Math.pow((pointA.coordY-pointB.coordY),2));
         System.out.println("Расстояние между точками на плоскости: "+ testdistance);
 }
 }

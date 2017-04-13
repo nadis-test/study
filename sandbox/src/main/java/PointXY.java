@@ -6,4 +6,10 @@ public class PointXY {
     public double coordX;
     public double coordY;
 
+    void setPoint(double x, double y) {
+        coordX = x;
+        coordY = y;
+
+    }
+
 }
