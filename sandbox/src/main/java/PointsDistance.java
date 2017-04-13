@@ -31,6 +31,8 @@ public static void main(String[] args) {
         double y1=2;
         double x2=5;
         double y2=7;
-        System.out.println("Расстояние между точками на плоскости: "+Math.sqrt(Math.pow((x1-x2),2)+Math.pow((y1-y2),2)));
+
+        testdistance = Math.sqrt(Math.pow((x1-x2),2)+Math.pow((y1-y2),2));
+        System.out.println("Расстояние между точками на плоскости: "+ testdistance);
 }
 }
