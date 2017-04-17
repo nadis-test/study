@@ -25,16 +25,20 @@
  */
 
 public class PointsDistance {
-public static void main(String[] args) {
-        double testdistance;
+    public static void main(String[] args) {
 
-        PointXY pointA = new PointXY();
-        PointXY pointB = new PointXY();
+        Point point1 = new Point(1,2);
+        Point point2 = new Point(5,7);
 
-        pointA.setPoint(1,2);
-        pointB.setPoint(5,7);
+        double test = testdistance(point1, point2);
 
-        testdistance = Math.sqrt(Math.pow((pointA.coordX-pointB.coordX),2)+Math.pow((pointA.coordY-pointB.coordY),2));
-        System.out.println("Расстояние между точками на плоскости: "+ testdistance);
+        System.out.println("Расстояние между точками на плоскости: " + test);
+
+    }
+
+    public static double testdistance(Point point1, Point point2){
+        return Math.sqrt(Math.pow((point1.x-point2.x),2)+Math.pow((point1.y-point2.y),2));
+    }
 }
-}
+
+
