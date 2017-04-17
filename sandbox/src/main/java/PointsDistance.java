@@ -30,15 +30,12 @@ public class PointsDistance {
         Point point1 = new Point(1,2);
         Point point2 = new Point(5,7);
 
-        double test = testdistance(point1, point2);
+        double test = point1.distance(point2);
 
         System.out.println("Расстояние между точками на плоскости: " + test);
 
     }
 
-    public static double testdistance(Point point1, Point point2){
-        return Math.sqrt(Math.pow((point1.x-point2.x),2)+Math.pow((point1.y-point2.y),2));
-    }
 }
 
 
